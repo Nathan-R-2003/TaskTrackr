@@ -1,25 +1,57 @@
 import logo from './logo.svg';
 import './App.css';
 
+const user = {
+  name: "Nathan Rodriguez",
+  password: "ajsbcasivci",
+} 
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class = "App-background">
+      <TopBar></TopBar>
+      <div class = "header-container">
+        <h1 class = "header"> Your Tasks </h1>
+      </div>
+      <CardContainer></CardContainer>
     </div>
   );
+}
+
+function CardContainer() {
+  return (
+    <div class = "container">
+
+    </div>
+  )
+
+}
+
+function Card() {
+  return (
+    <button>
+      <div>
+        
+      </div>
+    </button>
+  )
+}
+
+function TopBar() {
+  return (
+    <div class = "top-bar">
+      <p class = "text"> Welcome {user.name}</p>
+      <LogoutButton></LogoutButton>
+    </div>
+  )
+}
+
+function LogoutButton() {
+  return (
+    <button class="logout-button">
+      Logout
+    </button>
+  )
 }
 
 export default App;
