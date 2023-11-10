@@ -1,10 +1,9 @@
-const express = require('express');
+const express = require('express')
 const app = express();
-var http = require('http'); 
-var https = require('https');
-
-http.createServer(app).listen(80); 
-https.createServer({}, app).listen(443);
+const cors = require('cors')
+const { MongoClient } = require('mongodb');
+app.use(cors());
+app.use(express.json());
 
 app.get('/', (req, res) => {
 	res.send('Hello World');
