@@ -6,7 +6,7 @@ app.use(express.json());
 
 // connect to database
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://na707413:NatR2003%40@cluster0.6odal67.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://na707413:NatR2003%40@cluster0.6odal67.mongodb.net/user_stuff?retryWrites=true&w=majority");
 
 
 
